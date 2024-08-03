@@ -1,0 +1,9 @@
+FROM php:8.3-fpm
+
+WORKDIR /var/www/laravel
+
+RUN docker-php-ext-install pdo pdo_mysql
+
+# RUN chown -R www-data:www-data /var/www/laravel/storage /var/www/laravel/bootstrap/cache
+
+# RUN chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache
