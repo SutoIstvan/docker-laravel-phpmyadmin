@@ -23,7 +23,10 @@
 `URL: http://localhost:8000/`
 
 ## phpMyAdmin
-`URL: http://localhost:8080/`
+- `URL: http://localhost:8080/`
+- `Server: mysql`
+- `Username: laravel`
+- `Password: root`
 
 ## env
 - `DB_CONNECTION=mysql`
