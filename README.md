@@ -24,3 +24,11 @@
 
 ## phpMyAdmin
 `URL: http://localhost:8080/`
+
+## env
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel
+DB_PASSWORD=root
