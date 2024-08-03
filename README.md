@@ -22,5 +22,5 @@
 ## URL
 `URL: http://localhost:8000/`
 
-## phpmyadmin
+## phpMyAdmin
 `URL: http://localhost:8080/`
