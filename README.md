@@ -7,5 +7,20 @@
 - phpMyAdmin
 
 ##  How To Deploy
-- `git clone https://github.com/SutoIstvan/laravel-11-docker.git`
-- 
+- `git clone https://github.com/SutoIstvan/docker-laravel-phpmyadmin.git`
+- `cd docker-laravel-phpmyadmin`
+- `docker compose up -d --build`
+- `docker compose exec phpmyadmin chmod 777 /sessions`
+- `chown -R www-data:www-data /var/www/laravel/storage /var/www/laravel/bootstrap/cache`
+- `chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache`
+- `exit`
+- `rename .env.example to .env`
+- `docker compose run composer install`
+- `docker compose run artisan migrate`
+- `docker compose run artisan key:generate`
+
+## URL
+`URL: http://localhost:8000/`
+
+## phpmyadmin
+`URL: http://localhost:8080/`
