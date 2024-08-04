@@ -21,7 +21,9 @@ services:
       - 3316:3306
     env_file:
       - mysql/mysql.env
-
+    volumes:
+      - db_data:/var/lib/mysql
+  
   composer:
     build:
       context: dockerfiles
